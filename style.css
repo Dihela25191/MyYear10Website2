@@ -1,7 +1,11 @@
 
-/* General Website Styling */
+/* =========================
+   GENERAL SETTINGS
+========================= */
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,9 +14,9 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #080912;
+    color: white;
 
     background-image: url("images/Sungjinwoo2.JPG");
     background-size: cover;
@@ -21,33 +25,67 @@ body {
     background-attachment: fixed;
 }
 
-/* Hero Section */
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
-    min-height: 150px;
+    min-height: 300px;
+    padding: 40px 20px;
+
+    background: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    color: white;
 }
 
-/* Topic Sections */
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
 
-.topic {
+.hero p {
+    font-size: 18px;
+}
+
+/* =========================
+   TOPIC SECTIONS
+========================= */
+
+section.topic {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative;
     width: 90%;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
 
-    background: rgba(0, 0, 0, 0.75);
+    margin: 40px auto;
+    padding: 25px;
+
+    background-color: rgba(0, 0, 0, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 12px;
 }
 
-/* Topic Titles */
+/* =========================
+   TOPIC TITLES
+========================= */
 
 .topic-title {
+    display: block;
     width: 100%;
-    padding: 15px;
+
+    padding: 18px;
     margin-bottom: 25px;
 
-    background: rgba(30, 30, 30, 0.95);
+    background-color: #202020;
     border-radius: 8px;
 
     text-align: center;
@@ -55,26 +93,33 @@ body {
 }
 
 .topic-title h1 {
-    margin: 0;
+    color: white;
     font-size: 28px;
 }
 
-/* Image Grid */
+/* =========================
+   IMAGE GRID
+========================= */
 
 .topic-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 
     width: 100%;
 }
 
-/* Individual Cards */
+/* =========================
+   IMAGE CARDS
+========================= */
 
 .topic-card {
-    padding: 12px;
+    display: block;
 
-    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+
+    background-color: #f5f5f5;
     border-radius: 10px;
 
     text-align: center;
@@ -87,66 +132,72 @@ body {
     transform: translateY(-5px);
 }
 
-/* Images */
+/* =========================
+   IMAGES
+========================= */
 
 .topic-card img {
+    display: block;
+
     width: 100%;
     height: 220px;
 
     object-fit: contain;
-    border-radius: 6px;
 
+    border-radius: 6px;
     cursor: pointer;
+
     transition: transform 0.3s ease;
 }
 
 .topic-card img:hover {
-    transform: scale(1.03);
+    transform: scale(1.04);
 }
 
-/* Card Text */
+/* =========================
+   CARD TEXT
+========================= */
 
 .topic-card-text {
-    color: #222;
+    color: #222222;
     font-size: 19px;
-    margin: 15px 0 5px;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
-/* Video */
+/* =========================
+   VIDEO
+========================= */
 
 .topic-card video {
-    max-width: 100%;
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: auto;
+
     border-radius: 8px;
 }
 
-/* Footer */
-
-.footer {
-    width: 100%;
-    padding: 25px;
-
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-
-    text-align: center;
-    margin-top: 50px;
-}
-
-/* Image Popup */
+/* =========================
+   IMAGE POPUP
+========================= */
 
 .image-popup {
     display: none;
 
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
 
-    left: 0;
     top: 0;
+    left: 0;
 
     width: 100%;
     height: 100%;
 
-    background: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
 
     justify-content: center;
     align-items: center;
@@ -157,10 +208,13 @@ body {
 /* Enlarged Image */
 
 .image-popup img {
+    display: block;
+
     max-width: 90%;
     max-height: 85vh;
 
     object-fit: contain;
+
     border-radius: 8px;
 }
 
@@ -170,41 +224,64 @@ body {
     position: absolute;
 
     top: 15px;
-    right: 30px;
+    right: 35px;
 
     color: white;
     font-size: 50px;
     font-weight: bold;
 
     cursor: pointer;
-    transition: color 0.2s ease;
 }
 
 .close-popup:hover {
-    color: #aaa;
+    color: #aaaaaa;
 }
 
-/* Mobile Responsive Design */
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    display: block;
+
+    width: 100%;
+    padding: 25px;
+
+    margin-top: 50px;
+
+    background-color: rgba(0, 0, 0, 0.95);
+
+    color: white;
+    text-align: center;
+}
+
+/* =========================
+   TABLET SCREEN
+========================= */
 
 @media screen and (max-width: 768px) {
 
     .topic-content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .topic {
+    section.topic {
         width: 95%;
     }
 
-    .topic-title h1 {
-        font-size: 23px;
+    .hero h1 {
+        font-size: 32px;
     }
 
-    .topic-card img {
-        height: 180px;
+    .topic-title h1 {
+        font-size: 24px;
     }
 
 }
+
+/* =========================
+   MOBILE SCREEN
+========================= */
 
 @media screen and (max-width: 500px) {
 
@@ -212,17 +289,26 @@ body {
         grid-template-columns: 1fr;
     }
 
+    section.topic {
+        padding: 15px;
+    }
+
     .topic-card img {
         height: 220px;
     }
 
-    .image-popup {
-        padding: 10px;
+    .hero h1 {
+        font-size: 28px;
     }
 
     .image-popup img {
         max-width: 95%;
         max-height: 80vh;
+    }
+
+    .close-popup {
+        right: 20px;
+        top: 10px;
     }
 
 }

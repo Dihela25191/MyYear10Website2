@@ -1,18 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <title>My Showcase Website</title>
+
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- NAVIGATION BAR -->
     <header class="navbar">
+
         <div class="logo">MY SHOWCASE</div>
 
         <nav>
@@ -22,22 +27,32 @@
             <a href="#animation">Animation</a>
             <a href="#jinwoo">Gallery</a>
         </nav>
+
     </header>
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
+
         <div class="hero-content">
+
             <p class="hero-subtitle">WELCOME TO MY WEBSITE</p>
+
             <h1>My Digital Showcase</h1>
+
             <p>
                 Explore my projects, creativity and skills
                 developed throughout my learning journey.
             </p>
-            <a href="#editing" class="hero-button">Explore My Work</a>
+
+            <a href="#editing" class="hero-button">
+                Explore My Work
+            </a>
+
         </div>
+
     </section>
 
-    <!-- Image Editing -->
+    <!-- IMAGE EDITING -->
     <section class="topic" id="editing">
 
         <div class="topic-title">
@@ -66,9 +81,10 @@
             </div>
 
         </div>
+
     </section>
 
-    <!-- ASCII and Hexadecimal -->
+    <!-- ASCII AND HEXADECIMAL -->
     <section class="topic">
 
         <div class="topic-title">
@@ -97,9 +113,10 @@
             </div>
 
         </div>
+
     </section>
 
-    <!-- Programming -->
+    <!-- PROGRAMMING -->
     <section class="topic" id="programming">
 
         <div class="topic-title">
@@ -128,9 +145,10 @@
             </div>
 
         </div>
+
     </section>
 
-    <!-- Animation -->
+    <!-- ANIMATION -->
     <section class="topic" id="animation">
 
         <div class="topic-title">
@@ -159,9 +177,10 @@
             </div>
 
         </div>
+
     </section>
 
-    <!-- Animation Video -->
+    <!-- ANIMATION VIDEO -->
     <section class="topic">
 
         <div class="topic-title">
@@ -177,12 +196,16 @@
             </video>
 
             <h2>Animation Example</h2>
-            <p>This was one of the example videos for Animation.</p>
+
+            <p>
+                This was one of the example videos for Animation.
+            </p>
 
         </div>
+
     </section>
 
-    <!-- Sung Jinwoo Gallery -->
+    <!-- SUNG JINWOO GALLERY -->
     <section class="topic" id="jinwoo">
 
         <div class="topic-title">
@@ -208,14 +231,38 @@
             </div>
 
         </div>
+
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
+
         <h2>MY SHOWCASE</h2>
+
         <p>Thanks for checking out my website!</p>
+
         <p>&copy; 2026 My Showcase Website By Dihela Liyanapathirana</p>
+
     </footer>
+
+    <!-- CLICKABLE IMAGES SCRIPT -->
+    <script>
+
+        document.querySelectorAll(".topic-card img").forEach(function(image) {
+
+            const link = document.createElement("a");
+
+            link.href = image.src;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+
+            image.parentNode.insertBefore(link, image);
+
+            link.appendChild(image);
+
+        });
+
+    </script>
 
 </body>
 </html>

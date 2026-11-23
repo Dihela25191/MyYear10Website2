@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,46 +7,62 @@
     <link rel="stylesheet" href="style.css">
     <title>My Showcase Website</title>
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
-
-    <style>
-        body {
-            background-image: url("images/Sungjinwoo2.JPG");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- The Hero Section -->
-    <section class="hero">
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">MY SHOWCASE</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#editing">Image Editing</a>
+            <a href="#programming">Programming</a>
+            <a href="#animation">Animation</a>
+            <a href="#jinwoo">Gallery</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-subtitle">WELCOME TO MY WEBSITE</p>
+            <h1>My Digital Showcase</h1>
+            <p>
+                Explore my projects, creativity and skills
+                developed throughout my learning journey.
+            </p>
+            <a href="#editing" class="hero-button">Explore My Work</a>
+        </div>
     </section>
 
-    <!-- Topic one: Image Editing -->
-    <section class="topic">
+    <!-- Image Editing -->
+    <section class="topic" id="editing">
 
         <div class="topic-title">
             <h1>Image Editing</h1>
+            <p>Creative designs and digital artwork</p>
         </div>
 
         <div class="topic-content">
 
             <div class="topic-card">
                 <img src="images/sigmasheep123.png" alt="Sigma Sheep">
-                <h2 class="topic-card-text">Image Editing</h2>
+                <h2>Image Editing</h2>
+                <p>My image editing work.</p>
             </div>
 
             <div class="topic-card">
                 <img src="images/SIGMAWESTDEAGON.png" alt="Sigma West Dragon">
-                <h2 class="topic-card-text">Sticker Printing</h2>
+                <h2>Sticker Printing</h2>
+                <p>Designs created for sticker printing.</p>
             </div>
 
             <div class="topic-card">
                 <img src="images/Avatar1.jpg" alt="Avatar">
-                <h2 class="topic-card-text">Image Creation</h2>
+                <h2>Image Creation</h2>
+                <p>Digital image creation.</p>
             </div>
 
         </div>
@@ -57,137 +72,148 @@
     <section class="topic">
 
         <div class="topic-title">
-            <h1>ASCII and HEXADECIMAL</h1>
+            <h1>ASCII & HEXADECIMAL</h1>
+            <p>Learning how computers represent information</p>
         </div>
 
         <div class="topic-content">
 
             <div class="topic-card">
                 <img src="images/Dragonhexcode.png" alt="Dragon Hexadecimal Art">
-                <h2 class="topic-card-text">Hexadecimal Art</h2>
+                <h2>Hexadecimal Art</h2>
+                <p>Artwork created using hexadecimal values.</p>
             </div>
 
             <div class="topic-card">
                 <img src="images/Hexidecimal.PNG" alt="Hexadecimal Table">
-                <h2 class="topic-card-text">Hexadecimal Table</h2>
+                <h2>Hexadecimal Table</h2>
+                <p>A reference table of hexadecimal values.</p>
             </div>
 
             <div class="topic-card">
                 <img src="images/ASCII-Table.PNG" alt="ASCII Table">
-                <h2 class="topic-card-text">ASCII Table</h2>
+                <h2>ASCII Table</h2>
+                <p>Learning how characters are represented.</p>
             </div>
 
         </div>
     </section>
 
     <!-- Programming -->
-    <section class="topic">
+    <section class="topic" id="programming">
 
         <div class="topic-title">
             <h1>Grok Academy</h1>
+            <p>My programming progress and achievements</p>
         </div>
 
         <div class="topic-content">
 
             <div class="topic-card">
                 <img src="images/Pythonprogramming.jpg" alt="Python Programming">
-                <h2 class="topic-card-text">Python</h2>
+                <h2>Python</h2>
+                <p>Learning the basics of Python programming.</p>
             </div>
 
             <div class="topic-card">
-                <img src="images/PythonProgress.PNG" alt="Almost finished Python course">
-                <h2 class="topic-card-text">Python Progress</h2>
+                <img src="images/PythonProgress.PNG" alt="Python Progress">
+                <h2>Python Progress</h2>
+                <p>My progress through the Python course.</p>
             </div>
 
             <div class="topic-card">
-                <img src="images/HTML-CSS.png" alt="Almost finished HTML course">
-                <h2 class="topic-card-text">HTML/CSS Progress</h2>
+                <img src="images/HTML-CSS.png" alt="HTML and CSS Progress">
+                <h2>HTML/CSS Progress</h2>
+                <p>Learning to build and design websites.</p>
             </div>
 
         </div>
     </section>
 
     <!-- Animation -->
-    <section class="topic">
+    <section class="topic" id="animation">
 
         <div class="topic-title">
             <h1>Animating</h1>
+            <p>Exploring animation and character design</p>
         </div>
 
         <div class="topic-content">
 
             <div class="topic-card">
                 <img src="images/animation example.jpg" alt="Animation Example">
-                <h2 class="topic-card-text">Animation</h2>
+                <h2>Animation</h2>
+                <p>An example of my animation work.</p>
             </div>
 
             <div class="topic-card">
-                <img src="images/Mickeymouse.jpg" alt="Mickey Mouse Animation">
-                <h2 class="topic-card-text">Mickey Mouse</h2>
+                <img src="images/Mickeymouse.jpg" alt="Mickey Mouse">
+                <h2>Mickey Mouse</h2>
+                <p>A character animation project.</p>
             </div>
 
             <div class="topic-card">
-                <img src="images/AnimationHello.PNG" alt="Roblox Character Animation">
-                <h2 class="topic-card-text">Roblox Character</h2>
+                <img src="images/AnimationHello.PNG" alt="Roblox Character">
+                <h2>Roblox Character</h2>
+                <p>My Roblox character animation.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- Animation Video Example -->
+    <!-- Animation Video -->
     <section class="topic">
 
         <div class="topic-title">
-            <h1>Animating Video Example</h1>
+            <h1>Animation Video Example</h1>
+            <p>Watch one of the animation examples</p>
         </div>
 
-        <div class="topic-content">
+        <div class="video-container">
 
-            <div class="topic-card">
+            <video controls>
+                <source src="images/aryananimation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-                <video width="320" height="240" controls>
-                    <source src="images/aryananimation.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-
-                <h2 class="topic-card-text">
-                    This was one of the example videos for Animation
-                </h2>
-
-            </div>
+            <h2>Animation Example</h2>
+            <p>This was one of the example videos for Animation.</p>
 
         </div>
     </section>
 
-    <!-- Sung Jinwoo -->
-    <section class="topic">
+    <!-- Sung Jinwoo Gallery -->
+    <section class="topic" id="jinwoo">
 
         <div class="topic-title">
             <h1>Sung Jinwoo</h1>
+            <p>Character image gallery</p>
         </div>
 
         <div class="topic-content">
 
             <div class="topic-card">
-                <img src="images/Sunjinwoo1.JPG" alt="Sung Jinwoo">
-                <h2 class="topic-card-text">Sung Jinwoo</h2>
+                <img src="images/Sunjinwoo1.JPG" alt="Sung Jinwoo Image 1">
+                <h2>Sung Jinwoo</h2>
             </div>
 
             <div class="topic-card">
-                <img src="images/Sungjinwoo2.JPG" alt="Sung Jinwoo">
-                <h2 class="topic-card-text">Sung Jinwoo</h2>
+                <img src="images/Sungjinwoo2.JPG" alt="Sung Jinwoo Image 2">
+                <h2>Sung Jinwoo</h2>
             </div>
 
             <div class="topic-card">
-                <img src="images/Sungjinwoo3.JPG" alt="Sung Jinwoo">
-                <h2 class="topic-card-text">Sung Jinwoo</h2>
+                <img src="images/Sungjinwoo3.JPG" alt="Sung Jinwoo Image 3">
+                <h2>Sung Jinwoo</h2>
             </div>
 
         </div>
     </section>
 
-    <!-- Website Footer -->
+    <!-- Footer -->
     <footer class="footer">
+        <h2>MY SHOWCASE</h2>
+        <p>Thanks for checking out my website!</p>
         <p>&copy; 2026 My Showcase Website By Dihela Liyanapathirana</p>
     </footer>
 
